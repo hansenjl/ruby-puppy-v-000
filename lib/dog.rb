@@ -1,4 +1,6 @@
+require 'pry'
 class Dog
+ 
   @@all = []
   def initialize(name)
     @name = name
@@ -12,4 +14,5 @@ class Dog
   def self.clear_all
     @@all =[]
   end
+   binding.pry
 end
